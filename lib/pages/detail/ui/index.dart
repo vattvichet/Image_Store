@@ -119,31 +119,6 @@ class _DetailsPageState extends State<DetailsPage> {
                         ),
                       ],
                     ),
-                    Container(
-                      padding: EdgeInsets.all(Dimensions.height5),
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(50),
-                        color: AppColors.secondary.withOpacity(.1),
-                      ),
-                      child: IconButton(
-                        onPressed: () {
-                          setState(() {
-                            for (var item in all) {
-                              widget.shoe.id == item.id
-                                  ? all[all.indexOf(item)].isFavorite =
-                                      !all[all.indexOf(item)].isFavorite
-                                  : null;
-                            }
-                          });
-                        },
-                        icon: SvgPicture.asset(
-                          'assets/icons/Heart.svg',
-                          height: Dimensions.height30,
-                          width: Dimensions.width30,
-                          color: widget.shoe.isFavorite ? Colors.red : null,
-                        ),
-                      ),
-                    ),
                   ],
                 ),
               ),
@@ -167,7 +142,26 @@ class _DetailsPageState extends State<DetailsPage> {
                       height: Dimensions.height10,
                     ),
                     MyText(
-                      text: widget.shoe.desc,
+                      text: "hello this is the building picture",
+                      size: Dimensions.font14,
+                      lineHeight: 1.5,
+                    ),
+                    Padding(
+                      padding: EdgeInsets.all(Dimensions.height15),
+                      child: const Divider(
+                        thickness: 1.1,
+                      ),
+                    ),
+                    MyText(
+                      text: 'Date',
+                      size: Dimensions.font20,
+                      weight: FontWeight.w500,
+                    ),
+                    SizedBox(
+                      height: Dimensions.height10,
+                    ),
+                    MyText(
+                      text: "10th/July/2022",
                       size: Dimensions.font14,
                       lineHeight: 1.5,
                     ),

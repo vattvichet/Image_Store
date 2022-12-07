@@ -3,7 +3,7 @@ import 'package:ecommerce/core/theme/colors.dart';
 import 'package:ecommerce/core/utils/dimesions.dart';
 import 'package:ecommerce/pages/cart/controllers/cart_controller.dart';
 import 'package:ecommerce/pages/home/ui/widgets/banners.dart';
-import 'package:ecommerce/pages/home/ui/widgets/categories.dart';
+
 import 'package:ecommerce/pages/home/ui/widgets/my_text.dart';
 import 'package:ecommerce/pages/home/ui/widgets/recent_products.dart';
 import 'package:ecommerce/pages/home/ui/widgets/search_box.dart';
@@ -67,13 +67,6 @@ class HomePage extends StatelessWidget {
                   SizedBox(
                     width: Dimensions.width15,
                   ),
-                  IconButton(
-                    padding: EdgeInsets.zero,
-                    constraints: const BoxConstraints(),
-                    onPressed: () {},
-                    icon: SvgPicture.asset('assets/icons/Notification.svg'),
-                    iconSize: Dimensions.iconSize26,
-                  )
                 ],
               ),
             ],
@@ -85,7 +78,6 @@ class HomePage extends StatelessWidget {
             ),
           ),
           Banners(),
-          const Categories(),
           const RecentProducts(),
         ],
       ),

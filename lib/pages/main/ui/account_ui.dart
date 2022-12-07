@@ -23,13 +23,16 @@ class AccountView extends StatelessWidget {
               ),
             ),
           ),
+          const SizedBox(
+            height: 10,
+          ),
           const Text(
             "Vatt Vichet",
             textAlign: TextAlign.center,
             style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
           ),
           const SizedBox(
-            height: 20,
+            height: 30,
           ),
           Expanded(
               flex: 2,
@@ -46,6 +49,30 @@ class AccountView extends StatelessWidget {
                     ),
                     const Text(
                       "About",
+                      textAlign: TextAlign.center,
+                    ),
+                    const Text(""),
+                  ],
+                ),
+              )),
+          SizedBox(
+            height: 20,
+          ),
+          Expanded(
+              flex: 2,
+              child: Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),
+                  color: const Color.fromARGB(100, 120, 116, 116),
+                ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: [
+                    const SizedBox(
+                      height: 15,
+                    ),
+                    const Text(
+                      "Card",
                       textAlign: TextAlign.center,
                     ),
                     const Text(""),

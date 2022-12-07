@@ -57,6 +57,7 @@ class SearchBox extends StatelessWidget {
                 'assets/icons/Search.svg',
                 height: Dimensions.iconSize24,
                 width: Dimensions.iconSize24,
+                color: AppColors.main,
               ),
             ),
           ),
